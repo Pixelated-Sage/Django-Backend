@@ -1,0 +1,11 @@
+
+[[Django Introduction]]
+[[My SQL Setup]]
+[[Settings]]
+[[Creating Models]]
+[[Django API]]
+[[Admin Interface]]
+[[Config of Admin]]
+[[Views file & URL file]]
+[[Template rendering]]
+[[Template inheritance]]

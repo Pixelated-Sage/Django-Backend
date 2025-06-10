@@ -1,0 +1,18 @@
+{% extends "restaurant/base.html" %}
+{% block content %}
+<h1>Hello , this side abhishek</h1>
+<div>
+    <div>
+        {{ meals.0.name }}
+        {{ meals.0.price }}
+        {{ meals.0.available }}
+        {{ meals.0.stock }}
+    </div>
+    <div>
+        {{ meals.1.name }}
+        {{ meals.1.price}}
+        {{ meals.1.available }}
+        {{ meals.1.stock }}
+    </div>
+</div>
+{% endblock content %}
