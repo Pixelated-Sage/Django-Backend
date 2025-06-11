@@ -11,3 +11,5 @@
 		
 	- then use the tags in the `index.html` file too 
 		![[Pasted image 20250610122721.png]]
+
+- this is inheritance
