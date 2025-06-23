@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'restaurant', 
+    'crispy_forms',  # Add crispy_forms for form styling
+    'crispy_bootstrap5',  # Add crispy_bootstrap5 for Bootstrap 5
 ]
 
 MIDDLEWARE = [
@@ -130,6 +132,11 @@ STATIC_ROOT = Path.joinpath(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
+
+LOGIN_REDIRECT_URL = '/login/'  # Redirect to index after login
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'  # Use Bootstrap 5 for crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap5'  # Set the crispy template pack to Bootstrap
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

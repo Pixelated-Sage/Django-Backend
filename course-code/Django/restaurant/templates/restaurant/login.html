@@ -1,0 +1,107 @@
+{% extends 'restaurant/base/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'restaurant/css/login.css' %}">
+<style>
+/* Extra styles for glassmorphism and centering */
+.login-bg {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(120deg, #ea580c 0%, #fff7ed 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.login-image {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.5;
+}
+.glass-card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255,255,255,0.85);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem auto;
+}
+.glass-card h2 {
+    font-weight: 700;
+    color: #ea580c;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.login-form .form-control {
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ea580c33;
+    background: rgba(255,255,255,0.7);
+}
+.login-form .btn-primary {
+    background: #ea580c;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+.login-form .btn-primary:hover {
+    background: #c2410c;
+}
+@media (max-width: 600px) {
+    .glass-card {
+        padding: 1.5rem 0.5rem;
+        border-radius: 1rem;
+    }
+}
+</style>
+
+<div class="login-bg">
+    <div class="login-image"></div>
+    <div class="glass-card">
+        <h2 class="text-center">Login</h2>
+        <form class="login-form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ login_form|crispy }}
+            <button class="btn btn-primary w-100 mt-2" type="submit">
+                Login
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    const show = document.querySelector('.show-password');
+
+    let passwordField = document.querySelector('#password-id');
+
+    show.addEventListener('click', (event) => {
+        if( passwordField.type === 'password') {
+           
+        } else {
+            passwordField.type = 'password';
+             passwordField.type = 'text';
+        }
+    });
+
+</script>
+{% endblock content %}

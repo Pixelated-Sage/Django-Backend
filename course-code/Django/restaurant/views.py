@@ -2,6 +2,9 @@ from http import HTTPStatus
 from django.shortcuts import render , redirect
 from django.http import HttpResponse
 from restaurant.models import Meal,OrderTransaction
+from .form import UserLoginForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login as auth_login, logout
 # Create your views here.
 
 def index(request):
@@ -37,6 +40,7 @@ def order(request , pk = None):
             return redirect("index")
     return HttpResponse(HTTPStatus.BAD_REQUEST)
 
+@login_required
 def details(request):
     transaction = OrderTransaction.objects.filter(customer=request.user)
 
@@ -45,3 +49,29 @@ def details(request):
     }
 
     return render(request=request, template_name="restaurant/details.html", context=context)
+
+
+def login(request):
+    login_form = UserLoginForm(request.POST or None)
+    if request.method == "POST":
+        if login_form.is_valid():
+            username = login_form.cleaned_data.get('username')
+            password = login_form.cleaned_data.get('password')
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                auth_login(request, user)
+                return redirect("details")
+            login_form.add_error(None, "Invalid username or password")
+
+    else:
+        login_form = UserLoginForm()
+        login_form.fields['username'].widget.attrs['placeholder'] = 'Your Username'
+        login_form.fields['password'].widget.attrs['placeholder'] = 'Your Password'
+    context = {
+        'login_form': login_form,
+    }
+    return render(request=request, template_name="restaurant/login.html", context=context)
+
+def logout_user(request):
+    logout(request)
+    return redirect("index")
