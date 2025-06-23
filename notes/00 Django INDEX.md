@@ -1,0 +1,11 @@
+
+[[01 Django Introduction]]
+[[02 My SQL Setup]]
+[[03 Settings]]
+[[04 Creating Models]]
+[[05 Django API]]
+[[06 Admin Interface]]
+[[07 Config of Admin]]
+[[09 Views file & URL file]]
+[[10 Template rendering]]
+[[11 Template inheritance]]

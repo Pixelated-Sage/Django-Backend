@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'restaurant/css/header.css' %}">
+<header>
+    <div class="navigator">
+        <nav class="navbar navbar-expand-lg sticky-top " style="box-shadow: none;">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle Navigator" data-bs-target="#navbarContent" aria-controls="navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav container-fluid"> 
+                        <li class="nav-item logo text-center" style="width: 10%;">
+                            <a href="{% url 'index'%}">
+                                <img src="{% static 'restaurant/img/logo.jpg'%}" alt="Restaurant Logo" class="logo" style="width: 10px;"> 
+                            </a>
+                        </li>
+                        <li class="nav-item active mx-2 text-center" style="width: 100%;">
+                            <div class="row">
+                                
+                            </div>
+                            <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item active mx-2 text-center" style="width: 100%;">
+                            <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                    </ul>
+                </div>       
+            </div> 
+        </nav>
+    </div>
+</header>

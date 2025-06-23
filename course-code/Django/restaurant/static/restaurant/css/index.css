@@ -1,0 +1,21 @@
+.hero{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(14,17,32,0.062),rgba(14,17,32,0.8152)), url('../img/hero_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.welcome{
+    font-size:100px;
+    font-weight: 600;
+}
+
+.vertical-align-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
