@@ -1,8 +1,9 @@
-from django.test import TestCase
+from django.test import TestCase , client
 from django.urls import reverse
 from django.contrib.auth.models import User
 from .models import Meal
 from .form import UserLoginForm
+from django.contrib.auth import get_user
 # Create your tests here.
 
 class MealModelTest(TestCase):
@@ -46,4 +47,23 @@ class ViewsTest(TestCase):
         self.assertFalse(response)
 
 class FormsTest(TestCase):
-    def test
+    def test_login_from_user_name_is_required(self):
+        form = UserLoginForm()
+        self.assertTrue(form.fields['username'].required)
+    
+    def test_valid_login_form(self):
+        User.objects.create_user(username='testuser', password='testpass')
+        form = UserLoginForm(data={'username': 'testuser', 'password': 'testpass'})
+        self.assertTrue(form.is_valid())
+
+class ClientTest(TestCase):
+    def test_login(self):
+        user = User.objects.create(username = "testuser")
+        user.set_password('testpass')
+        user.save()
+
+        c = client.Client()
+        c.post('/login/', {'username': 'testuser', 'password': 'testpass'})
+
+        respionse = c.get(reverse('details'))
+        self.assertEqual(respionse.status_code, 200)
