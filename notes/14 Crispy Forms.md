@@ -1,4 +1,3 @@
-
 First we have to install the crispy form into the django 
 - this is django module which use bootstrap as its style engine 
 
@@ -10,18 +9,18 @@ also we have to install a module which support this module
 
 after installation `settings.py` setup 
 
-![[Pasted image 20250623164035.png]]
+![Pasted image 20250623164035](img/Pasted%20image%2020250623164035.png)
 
 next is to 
-![[Pasted image 20250623164100.png]]
+![Pasted image 20250623164100](img/Pasted%20image%2020250623164100.png)
 
 - to load the tags into the html file 
   
-  ![[Pasted image 20250623164203.png]]
+  ![Pasted image 20250623164203](img/Pasted%20image%2020250623164203.png)
 - to add crispy in the form use 
-  ![[Pasted image 20250623164401.png]]
+  ![Pasted image 20250623164401](img/Pasted%20image%2020250623164401.png)
 
 
 **Result 
 
-![[Pasted image 20250623164437.png]]
+![Pasted image 20250623164437](img/Pasted%20image%2020250623164437.png)
