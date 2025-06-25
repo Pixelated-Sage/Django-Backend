@@ -33,7 +33,7 @@
 
 ## Files Structure
 
-![[Pasted image 20250608120256.png]]
+[Pasted image 20250608120256](Pasted%20image%2020250608120256.png)
 
 - `manage.py` - to do the administrative task for the application
 - `db.sqlite3` - the database of the web page
