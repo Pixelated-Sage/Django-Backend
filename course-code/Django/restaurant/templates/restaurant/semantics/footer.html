@@ -1,8 +1,10 @@
 {% load static %}
 
+{% load custom_tags %}
+
 <link rel="stylesheet" href="{% static 'restaurant/css/footer.css' %}">
 <footer class="mt-5 pt-3">
     <div class="row container-fluid mx-auto text-center">
-        <p>&copy; 2024 Restaurant. All rights reserved.</p>
+        <p>&copy; Copyright Pixelated-Sage {% current_year %}</p>
     </div>
 </footer>

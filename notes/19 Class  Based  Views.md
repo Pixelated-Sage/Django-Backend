@@ -20,3 +20,9 @@ and do the same for all the def functions
 
 ![[Pasted image 20250624175410.png]]
 
+Now making the login form into class based view
+
+![[Pasted image 20250625105728.png]]
+
+![[Pasted image 20250625105745.png]]
+

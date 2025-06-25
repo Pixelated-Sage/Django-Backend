@@ -1,28 +1,7 @@
 from django import forms
+from django.contrib.auth.forms import AuthenticationForm
 
-
-class UserLoginForm(forms.Form):
-    username = forms.CharField(
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'placeholder' : 'Your Username',
-                'autocomplete': 'off',
-            }
-        )
-    )
-
-    password = forms.CharField(
-        required=True,
-        widget=forms.PasswordInput(
-            attrs={
-                'placeholder': 'Your Password',
-                'autocomplete': 'off',
-                'id': 'password-id',
-            }
-        )
-    )
-
+class UserLoginForm(AuthenticationForm):
     show = forms.BooleanField(
         label="Show Password",
         required=False,
