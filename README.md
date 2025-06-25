@@ -167,4 +167,3 @@ This project is intended for educational purposes and as a portfolio piece showc
 ---
 
 **Thank you for exploring my Django Restaurant Project!**
-````
