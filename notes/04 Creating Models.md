@@ -1,4 +1,4 @@
-![[Pasted image 20250609120705.png]]
+![Pasted image 20250609120705](img/Pasted%20image%2020250609120705.png)
 
 **This is the model we made and after that use these commands to make the migrations
 
@@ -7,11 +7,10 @@
 
 **Make sure you added the file name of you app in which the model.py file is present like this 
 Settings.py
-![[Pasted image 20250609120847.png]]
-
+![Pasted image 20250609120847](img/Pasted%20image%2020250609120847.png)
 
 - **After these the database at the SQL got the changes updated
   
-  ![[Pasted image 20250609121014.png]]
+  ![Pasted image 20250609121014](img/Pasted%20image%2020250609121014.png)
 
 

@@ -1,24 +1,23 @@
-
-[[01 Django Introduction]]
-[[02 My SQL Setup]]
-[[03 Settings]]
-[[04 Creating Models]]
-[[05 Django API]]
-[[06 Admin Interface]]
-[[07 Config of Admin]]
-[[09 Views file & URL file]]
-[[10 Template rendering]]
-[[11 Template inheritance]]
-[[12 Static and Media file]]
-[[13 Making Froms]]
-[[14 Crispy Forms]]
-[[15 Accessing and Processing Form data]]
-[[16 Customization Inside Form.py and javascript use]]
-[[17 Tests in django]]
+[01 Django Introduction](01%20Django%20Introduction.md)
+[02 My SQL Setup](02%20My%20SQL%20Setup.md)
+[03 Settings](03%20Settings.md)
+[04 Creating Models](04%20Creating%20Models.md)
+[05 Django API](05%20Django%20API.md)
+[06 Admin Interface](06%20Admin%20Interface.md)
+[07 Config of Admin](07%20Config%20of%20Admin.md)
+[09 Views file & URL file](09%20Views%20file%20%26%20URL%20file.md)
+[10 Template rendering](10%20Template%20rendering.md)
+[11 Template inheritance](11%20Template%20inheritance.md)
+[12 Static and Media file](12%20Static%20and%20Media%20file.md)
+[13 Making Froms](13%20Making%20Froms.md)
+[14 Crispy Forms](14%20Crispy%20Forms.md)
+[15 Accessing and Processing Form data](15%20Accessing%20and%20Processing%20Form%20data.md)
+[16 Customization Inside Form.py and javascript use](16%20Customization%20Inside%20Form.py%20and%20javascript%20use.md)
+[17 Tests in django](17%20Tests%20in%20django.md)
 [18 Test Client Module](18%20Test%20Client%20Module.md)
 [19 Class  Based  Views](19%20Class%20%20Based%20%20Views.md)
 [20 Built-in](20%20Built-in.md)
-[21 Custom Template {Tags}](21%20Custom%20Template%20{Tags}.md)
+[21 Custom Template {Tags}](21%20Custom%20Template%20%7BTags%7D.md)
 [22 Production Readiness](22%20Production%20Readiness.md)
 [23 Robot.text](23%20Robot.text.md)
 [24 Make a production ready folder structure](24%20Make%20a%20production%20ready%20folder%20structure.md)
