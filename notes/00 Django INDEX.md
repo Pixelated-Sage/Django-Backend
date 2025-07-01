@@ -5,7 +5,7 @@
 [05 Django API](05%20Django%20API.md)
 [06 Admin Interface](06%20Admin%20Interface.md)
 [07 Config of Admin](07%20Config%20of%20Admin.md)
-[09 Views file & URL file](09%20Views%20file%20%26%20URL%20file.md)
+[09 Views file & URL file](09%20Views%20file%20&%20URL%20file.md)
 [10 Template rendering](10%20Template%20rendering.md)
 [11 Template inheritance](11%20Template%20inheritance.md)
 [12 Static and Media file](12%20Static%20and%20Media%20file.md)
